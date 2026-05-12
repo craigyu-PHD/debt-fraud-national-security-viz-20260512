@@ -3,183 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>債務陷阱、詐欺金融與國家安全｜v04 圖表與圖說</title>
+  <title>債務陷阱、詐欺金融與國家安全｜v05 SciSpace 風格圖表</title>
   <style>
-    :root {
-      --ink:#14213d; --muted:#5d6268; --line:#ded5c7; --paper:#fffaf0;
-      --soft:#f6efe2; --panel:#fffdf7; --dark:#14213d;
-      --blue:#2f6f9f; --green:#2c7a5a; --amber:#c77700; --red:#b13b3b; --purple:#6e578c;
-    }
+    :root { --ink:#14213d; --muted:#64748b; --paper:#fbfaf6; --line:#ded5c7; --navy:#14213d; --blue:#2f6f9f; --gold:#c77700; }
     * { box-sizing:border-box; }
-    body { margin:0; background:radial-gradient(circle at 20% 0%, #f0e4d2 0, #fffaf0 34%, #fffdf7 100%); color:var(--ink); font-family:"PingFang TC","STHeiti",serif; line-height:1.72; }
-    header { padding:58px 6vw 36px; border-bottom:1px solid var(--line); background:linear-gradient(135deg,#14213d 0%,#173a5a 52%,#2f6f9f 78%,#c77700 100%); color:#fff; }
-    .kicker { font-size:13px; letter-spacing:.08em; color:#f6efe2; text-transform:uppercase; }
-    h1 { font-size:clamp(30px,4.2vw,54px); line-height:1.16; margin:8px 0 14px; max-width:1120px; text-shadow:0 3px 20px rgba(0,0,0,.28); }
-    .lead { max-width:980px; font-size:18px; color:#fff8ea; }
+    body { margin:0; background:linear-gradient(135deg,#fbfaf6,#f0e6d7); color:var(--ink); font-family:"PingFang TC","STHeiti","Noto Serif CJK TC",serif; }
+    header { padding:56px 6vw 38px; background:linear-gradient(135deg,#14213d,#2f6f9f 70%,#c77700); color:#fff; }
+    .kicker { letter-spacing:.08em; font-size:13px; text-transform:uppercase; opacity:.9; }
+    h1 { max-width:1120px; font-size:clamp(32px,4.2vw,58px); line-height:1.12; margin:12px 0 18px; }
+    .lead { max-width:1050px; font-size:18px; line-height:1.8; }
     nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
-    nav a { color:#14213d; text-decoration:none; border:1px solid rgba(255,255,255,.72); padding:7px 12px; border-radius:999px; background:rgba(255,253,247,.88); font-size:14px; }
-    main { padding:30px 6vw 70px; }
-    .meta { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-bottom:30px; }
-    .meta div { border:1px solid var(--line); background:var(--panel); padding:14px 16px; min-height:92px; box-shadow:0 12px 28px rgba(20,33,61,.08); }
-    .meta strong { display:block; font-size:13px; color:var(--blue); margin-bottom:6px; }
-    .figure-card { border-top:3px solid var(--dark); padding:30px 0 48px; }
-    .figure-head { display:flex; align-items:baseline; gap:16px; margin-bottom:16px; }
-    .figure-head span { font-weight:700; color:#fff; background:var(--dark); padding:4px 9px; border-radius:3px; }
-    h2 { font-size:24px; margin:0; }
-    img { width:100%; display:block; border:1px solid var(--line); background:#fffdf7; box-shadow:0 18px 38px rgba(20,33,61,.10); }
-    .caption { margin-top:16px; columns:2; column-gap:34px; font-size:15px; color:#262a2f; }
-    .caption p { break-inside:avoid; margin:0 0 10px; }
-    footer { border-top:1px solid var(--line); padding:28px 6vw; color:var(--muted); font-size:14px; }
-    @media (max-width:900px) { .meta { grid-template-columns:1fr 1fr; } .caption { columns:1; } }
-    @media (max-width:620px) { header, main, footer { padding-left:22px; padding-right:22px; } .meta { grid-template-columns:1fr; } }
+    nav a { color:#14213d; background:#fffdf7; border:1px solid rgba(255,255,255,.8); padding:8px 14px; border-radius:999px; text-decoration:none; font-weight:700; }
+    main { padding:34px 6vw 72px; }
+    .figure-card { border-top:3px solid var(--navy); padding:34px 0 54px; }
+    .figure-heading { display:flex; gap:14px; align-items:baseline; margin-bottom:18px; }
+    .figure-heading span { background:var(--navy); color:#fff; padding:5px 10px; border-radius:4px; font-weight:800; }
+    h2 { font-size:26px; margin:0; }
+    img { display:block; width:100%; background:#fffdf7; border:1px solid var(--line); box-shadow:0 22px 52px rgba(20,33,61,.14); }
+    .caption-block { margin-top:18px; padding:22px 26px; background:#fffdf7; border-left:5px solid var(--blue); box-shadow:0 12px 28px rgba(20,33,61,.08); }
+    .caption-block p { margin:0; font-size:17px; line-height:1.9; text-align:justify; }
+    footer { padding:28px 6vw; border-top:1px solid var(--line); color:var(--muted); }
   </style>
 </head>
 <body>
   <header>
-    <div class="kicker">v04 research figures / reproducible coded visuals</div>
+    <div class="kicker">v05 / scispace-inspired coded knowledge maps</div>
     <h1>債務陷阱、詐欺金融與國家安全：國軍遭滲透之自我中心網絡分析與跨域犯罪溯源</h1>
-    <p class="lead">本頁彙整八張彩色正式圖表與詳細圖說。所有含真實節點、邊、金額、案號或實證標籤的圖，皆由 v04 編碼表與 Python 腳本直接生成；未使用 Image 產生模型。</p>
-    <nav><a href="#圖1">圖1</a><a href="#圖2">圖2</a><a href="#圖3">圖3</a><a href="#圖4">圖4</a><a href="#圖5">圖5</a><a href="#圖6">圖6</a><a href="#圖7">圖7</a><a href="#圖8">圖8</a></nav>
+    <p class="lead">本頁重製八張正式圖表，改採固定 SVG 畫布、細線弧線、節點光暈、標籤避讓與綜合式圖說。所有含真實節點、邊、金額或實證標籤的圖，仍由正式編碼資料直接生成，未使用 Image 產生模型。</p>
+    <nav><a href="#fig1">圖1</a><a href="#fig2">圖2</a><a href="#fig3">圖3</a><a href="#fig4">圖4</a><a href="#fig5">圖5</a><a href="#fig6">圖6</a><a href="#fig7">圖7</a><a href="#fig8">圖8</a></nav>
   </header>
   <main>
-    <section class="meta">
-      <div><strong>研究主軸</strong>債務脆弱性、犯罪金融基礎設施與國安滲透的交會。</div>
-      <div><strong>方法</strong>判決書驅動的自我中心網絡擴張與滾雪球抽樣。</div>
-      <div><strong>資料規則</strong>E3 為主，必要時 E2；E1/E0 不進正式主網絡。</div>
-      <div><strong>圖表原則</strong>彩色分層、形狀與線型並用；顏色只表示類型，不表示罪責。</div>
-    </section>
-    
-        <section class="figure-card" id="圖1">
-          <div class="figure-head">
-            <span>圖1</span>
-            <h2>國軍遭滲透之債務—詐欺金融—資料外流機制圖</h2>
-          </div>
-          <img src="fig01_mechanism_v04.png" alt="國軍遭滲透之債務—詐欺金融—資料外流機制圖">
-          <div class="caption">
-            <p><b>本文主題：</b>本文主題是敵對勢力如何在國安滲透中借用犯罪金融基礎設施，並使債務脆弱性成為吸收與控制軍人的中介機制。</p>
-            <p><b>圖表目的：</b>以理論架構整合 RQ1 滲透入口與 RQ2 犯罪金融基礎設施問題。</p>
-            <p><b>問題意識：</b>若只把案件寫成個別共諜敘事，會看不見錢、債務、通訊與資料外流之間的行動鏈。</p>
-            <p><b>繪圖理由與理論依據：</b>依 State-Crime Nexus、Illicit Finance Infrastructure 與 Vulnerability-Based Recruitment 建構；圖中節點是機制環節，不是個案實證邊。</p>
-            <p><b>閱讀方式：</b>由左至右讀取：財務脆弱性進入網貸/地下金融場域，再經 broker/recruiter 接近，形成利誘、脅迫、資料取得與交付，最後帶出再招募與國安風險。</p>
-            <p><b>推論限制：</b>此圖為概念圖，不表示每一案件皆完整出現所有階段。</p>
-          </div>
+        <section class="figure-card" id="fig1">
+          <div class="figure-heading"><span>圖1</span><h2>國軍遭滲透之債務—詐欺金融—資料外流機制圖</h2></div>
+          <img src="fig01_mechanism_v05.png" alt="國軍遭滲透之債務—詐欺金融—資料外流機制圖">
+          <div class="caption-block"><p>本圖將本文的理論主軸整理為一條由財務脆弱性進入犯罪金融場域、再經中介者接近與吸收，最後通向資料外流與再招募風險的機制鏈。圖面採取由左至右的流程語法，是為了避免把國軍滲透案件簡化為單一人物道德失範，而是凸顯敵對勢力可能借用網路借貸、地下匯兌、人頭帳戶與通訊工具等犯罪服務供應鏈。讀者應把此圖視為理論架構與研究命題的整合圖，而非每一個個案都必然完整出現所有階段的因果證明。</p></div>
         </section>
         
-        <section class="figure-card" id="圖2">
-          <div class="figure-head">
-            <span>圖2</span>
-            <h2>裁判書、官方資料與媒體資料之證據分級流程圖</h2>
-          </div>
-          <img src="fig02_evidence_flow_v04.png" alt="裁判書、官方資料與媒體資料之證據分級流程圖">
-          <div class="caption">
-            <p><b>本文主題：</b>本文主題要求把國安滲透與犯罪金融連結建立在可追溯資料上。</p>
-            <p><b>圖表目的：</b>說明 E3-E0 的納入與排除規則，防止媒體線索直接變成犯罪關係邊。</p>
-            <p><b>問題意識：</b>國安案件報導密集，但若不區分證據等級，容易把共現、傳聞或未確定資訊畫成正式網絡。</p>
-            <p><b>繪圖理由與理論依據：</b>對應社會網絡分析的 boundary specification 與資料品質控制；正式實證以 E3 為主，必要時納入 E2。</p>
-            <p><b>閱讀方式：</b>E3/E2 可進正式分析，E1 只作背景或待查，E0 排除正式網絡；建邊須有明確事實摘要。</p>
-            <p><b>推論限制：</b>E1/E0 可指引後續蒐證，但不得單獨支撐正式邊。</p>
-          </div>
+        <section class="figure-card" id="fig2">
+          <div class="figure-heading"><span>圖2</span><h2>裁判書、官方資料與媒體資料之證據分級流程圖</h2></div>
+          <img src="fig02_evidence_flow_v05.png" alt="裁判書、官方資料與媒體資料之證據分級流程圖">
+          <div class="caption-block"><p>本圖說明本文如何把來源可信度轉化為網絡建構規則。E3 與必要的 E2 資料構成正式網絡，E1 只能作為背景線索或待查提示，E0 則不得進入正式主網絡。這樣畫的目的，是把方法上的保守性直接放進圖面，使讀者理解本研究不是以媒體共現或姓名搜尋建立犯罪關係，而是以司法文書與可追溯官方資料作為建邊門檻。</p></div>
         </section>
         
-        <section class="figure-card" id="圖3">
-          <div class="figure-head">
-            <span>圖3</span>
-            <h2>由指標人物到跨域犯罪基礎設施之滾雪球抽樣流程圖</h2>
-          </div>
-          <img src="fig03_snowball_sampling_v04.png" alt="由指標人物到跨域犯罪基礎設施之滾雪球抽樣流程圖">
-          <div class="caption">
-            <p><b>本文主題：</b>本文不是全網掃描，而是從指標判決與官方資料出發的自我中心網絡擴張。</p>
-            <p><b>圖表目的：</b>說明從 seed 人物到人、物、工具、跨域案件的逐層擴張邏輯。</p>
-            <p><b>問題意識：</b>若直接搜尋國安、詐欺、地下匯兌所有案件，樣本邊界會失控且難以重現。</p>
-            <p><b>繪圖理由與理論依據：</b>依 ego network expansion 與 anchor-based collection；只有來源明確描述關係時才擴張。</p>
-            <p><b>閱讀方式：</b>從左到右看：seed 指標節點、第一層直接關係、第二層金融/組織工具、第三層跨域犯罪案件；下方停止規則限制過度擴張。</p>
-            <p><b>推論限制：</b>滾雪球抽樣不代表完整地下網絡，只呈現正式資料可追蹤到的擴張路徑。</p>
-          </div>
+        <section class="figure-card" id="fig3">
+          <div class="figure-heading"><span>圖3</span><h2>由指標人物到跨域犯罪基礎設施之滾雪球抽樣流程圖</h2></div>
+          <img src="fig03_snowball_sampling_v05.png" alt="由指標人物到跨域犯罪基礎設施之滾雪球抽樣流程圖">
+          <div class="caption-block"><p>本圖呈現本文的判決書驅動自我中心網絡擴張程序。研究從指標人物出發，先辨識其一階人物與任務關係，再追蹤金流、通訊、組織與場域等二階節點，最後才檢查這些節點是否出現在銀行法、洗錢、詐欺金融或組織犯罪案件中。採用同心層次而非一般搜尋流程，是為了凸顯本文的抽樣邊界：研究目的不是掃描全部共諜案件，而是檢驗特定滲透案件是否向犯罪金融基礎設施擴張。</p></div>
         </section>
         
-        <section class="figure-card" id="圖4">
-          <div class="figure-head">
-            <span>圖4</span>
-            <h2>國軍滲透案件之多模節點與關係編碼架構</h2>
-          </div>
-          <img src="fig04_multimodal_schema_v04.png" alt="國軍滲透案件之多模節點與關係編碼架構">
-          <div class="caption">
-            <p><b>本文主題：</b>本文把國安滲透視為人物、組織、金融工具、通訊工具與地點共同構成的多模網絡。</p>
-            <p><b>圖表目的：</b>建立節點類型與邊類型，讓後續圖表不把所有關係混成單一人物線。</p>
-            <p><b>問題意識：</b>同案共犯、軍職隸屬、付款、資料交付與招募是不同關係，混畫會產生共現誤判。</p>
-            <p><b>繪圖理由與理論依據：</b>依 two-mode/multimode network 與 multilayer network 理論；以形狀區分節點 mode、線型區分關係 layer。</p>
-            <p><b>閱讀方式：</b>先看節點形狀與類型，再看邊線型；例如資料交付邊與付款邊分開，不用同一條線暗示所有意義。</p>
-            <p><b>推論限制：</b>此圖是 coding schema，不是實證關係圖。</p>
-          </div>
+        <section class="figure-card" id="fig4">
+          <div class="figure-heading"><span>圖4</span><h2>國軍滲透案件之多模節點與關係編碼架構</h2></div>
+          <img src="fig04_multimodal_schema_v05.png" alt="國軍滲透案件之多模節點與關係編碼架構">
+          <div class="caption-block"><p>本圖是本文多模網絡資料結構的編碼藍圖。不同形狀代表不同節點類型，不同線型代表招募、付款、債務、通訊、資料交付、金融服務與組織隸屬等不同關係層。這種畫法的重點，是避免把同案共犯、同組織或同新聞稿中的共現誤認為上下線關係；只有來源明確描述互動內容時，才形成對應的關係邊。</p></div>
         </section>
         
-        <section class="figure-card" id="圖5">
-          <div class="figure-head">
-            <span>圖5</span>
-            <h2>高階軍官、基層士官兵與外圍組織之滲透類型比較</h2>
-          </div>
-          <img src="fig05_typology_matrix_v04.png" alt="高階軍官、基層士官兵與外圍組織之滲透類型比較">
-          <div class="caption">
-            <p><b>本文主題：</b>本文比較不同階層與場域中的滲透機制差異。</p>
-            <p><b>圖表目的：</b>回答 RQ4：高階軍官與基層士官兵遭滲透的機制是否不同。</p>
-            <p><b>問題意識：</b>若只以共諜案件統稱全部案例，會忽略高階收買、基層擴散、債務網貸與外圍金融支援的差異。</p>
-            <p><b>繪圖理由與理論依據：</b>依 qualitative typology 與 process comparison；彩色矩陣凸顯類型差異，並保留表格結構讓差異可比。</p>
-            <p><b>閱讀方式：</b>橫向比較入口、誘因、控制方式、金流與風險；張銘哲與屈宏義只在目前資料等級允許範圍內註記。</p>
-            <p><b>推論限制：</b>類型是分析工具，不表示所有案件只能歸入單一類型。</p>
-          </div>
+        <section class="figure-card" id="fig5">
+          <div class="figure-heading"><span>圖5</span><h2>高階軍官、基層士官兵與外圍組織之滲透類型比較</h2></div>
+          <img src="fig05_typology_matrix_v05.png" alt="高階軍官、基層士官兵與外圍組織之滲透類型比較">
+          <div class="caption-block"><p>本圖以類型比較的方式，將高階軍官收買、基層士官兵擴散、債務或網貸脆弱性，以及組織與金融支援四種模式放在同一個分析平面上。矩陣不是為了羅列案例，而是用來比較滲透入口、誘因、控制方式、金流工具與主要風險之間的差異，使本文能從個案敘事推進到可比較的機制分析。</p></div>
         </section>
         
-        <section class="figure-card" id="圖6">
-          <div class="figure-head">
-            <span>圖6</span>
-            <h2>國軍滲透案件之招募、金流與資料交付三重流向圖</h2>
-          </div>
-          <img src="fig06_triple_flow_v04.png" alt="國軍滲透案件之招募、金流與資料交付三重流向圖">
-          <div class="caption">
-            <p><b>本文主題：</b>本文核心實證關注招募流、金流與資料流如何連接國軍節點、外部情工與犯罪金融基礎設施。</p>
-            <p><b>圖表目的：</b>回答 RQ2、RQ3 與 H1/H4，辨識跨域中介與服務節點。</p>
-            <p><b>問題意識：</b>傳統人物關係圖容易把同案共犯畫成上下線；本圖改用線型區分招募、付款、資料交付、債務與金融服務。</p>
-            <p><b>繪圖理由與理論依據：</b>依 directed multirelational network；箭頭表示來源支持的方向，線型表示關係類型，線寬不代表刑責。</p>
-            <p><b>閱讀方式：</b>先看線型，再看箭頭方向與金額標籤；邵維強連接組織發展與地下匯兌，蔡姓上士案例補充債務/網貸入口。</p>
-            <p><b>推論限制：</b>只有 E3/E2 邊進入此圖；黃琮壹只作中介線索，不推定每名被告均透過其交付。</p>
-          </div>
+        <section class="figure-card" id="fig6">
+          <div class="figure-heading"><span>圖6</span><h2>國軍滲透案件之招募、金流與資料交付三重流向圖</h2></div>
+          <img src="fig06_triple_flow_v05.png" alt="國軍滲透案件之招募、金流與資料交付三重流向圖">
+          <div class="caption-block"><p>本圖是本文的核心實證圖，將招募流、金流、資料交付流、通訊流與金融服務流分層畫在同一張網絡中。圖中的方向箭頭表示來源明示的關係方向，線型表示關係類型，並不表示罪責大小或主從地位。透過分層流向，讀者可以看出邵維強案提供組織發展與地下匯兌的交會錨點，憲兵與電指部群案呈現基層資料交付與報酬鏈，澎防部蔡姓士官案則補充債務或網貸脆弱性如何成為吸收入口。</p></div>
         </section>
         
-        <section class="figure-card" id="圖7">
-          <div class="figure-head">
-            <span>圖7</span>
-            <h2>軍事滲透網絡中跨域中介者之橋接中心性</h2>
-          </div>
-          <img src="fig07_brokerage_centrality_v04.png" alt="軍事滲透網絡中跨域中介者之橋接中心性">
-          <div class="caption">
-            <p><b>本文主題：</b>本文關注誰連接軍人、敵對情工、犯罪金融與制度節點。</p>
-            <p><b>圖表目的：</b>檢驗 H4：中介者可能呈現較高 betweenness centrality 或 brokerage role。</p>
-            <p><b>問題意識：</b>找最大咖不等於找 broker；真正重要的是誰讓不同子網絡接起來。</p>
-            <p><b>繪圖理由與理論依據：</b>依 Freeman betweenness centrality 與 brokerage/structural holes 理論；用 NetworkX 在 E3/E2 網絡中計算。</p>
-            <p><b>閱讀方式：</b>長條越高表示該節點在目前資料中越常位於最短路徑上；右側網絡節點大小依 betweenness 調整。</p>
-            <p><b>推論限制：</b>中心性不是刑責、主謀或道德責任，且受樣本邊界與公開資料缺漏影響。</p>
-          </div>
+        <section class="figure-card" id="fig7">
+          <div class="figure-heading"><span>圖7</span><h2>軍事滲透網絡中跨域中介者之橋接中心性</h2></div>
+          <img src="fig07_brokerage_centrality_v05.png" alt="軍事滲透網絡中跨域中介者之橋接中心性">
+          <div class="caption-block"><p>本圖以橋接中心性呈現目前 E3/E2 正式網絡中的中介位置。左側排序顯示哪些節點在不同子網絡之間扮演較多橋接功能，右側網絡則把這些橋接位置放回實際關係結構中解讀。此圖的學術意義不在於判斷誰是主謀，而在於檢驗本文的中介者假設：軍人節點、敵對情工節點與犯罪金融節點之間，是否需要 broker 或金融服務節點作為連接器。</p></div>
         </section>
         
-        <section class="figure-card" id="圖8">
-          <div class="figure-head">
-            <span>圖8</span>
-            <h2>國軍滲透案件之接觸、付款、資料交付與判決時間序列</h2>
-          </div>
-          <img src="fig08_event_timeline_v04.png" alt="國軍滲透案件之接觸、付款、資料交付與判決時間序列">
-          <div class="caption">
-            <p><b>本文主題：</b>本文要判斷不同案件中債務、接觸、付款、資料交付與司法揭露的先後關係。</p>
-            <p><b>圖表目的：</b>支援 process tracing，避免把同時出現在判決中的事實誤解為同時發生。</p>
-            <p><b>問題意識：</b>CiteSpace 風格容易被誤解為文獻計量；本研究需要事件序列而非文獻共被引圖。</p>
-            <p><b>繪圖理由與理論依據：</b>依事件史與動態網絡思維；用年份與案件泳道呈現關係形成與司法揭露。</p>
-            <p><b>閱讀方式：</b>沿時間軸看各案例：邵維強2002組織發展、2016-2022地下匯兌、2019吸收向德恩；臺北群案集中於2022-2025；蔡姓上士顯示網貸入口與快速資料交付。</p>
-            <p><b>推論限制：</b>時間點以來源可確認者為準；E1 待查節點以空心標示。</p>
-          </div>
+        <section class="figure-card" id="fig8">
+          <div class="figure-heading"><span>圖8</span><h2>國軍滲透案件之接觸、付款、資料交付與判決時間序列</h2></div>
+          <img src="fig08_event_timeline_v05.png" alt="國軍滲透案件之接觸、付款、資料交付與判決時間序列">
+          <div class="caption-block"><p>本圖將接觸、付款、資料交付與司法揭露放入事件序列，目的在於檢查不同案件中的先後關係與時間聚集。與文獻計量式時間線不同，本圖不展示文獻共被引或研究主題演化，而是用來輔助判斷債務、金融服務、資料交付與司法偵辦之間的時間秩序。讀者應注意，時間相鄰不等於因果成立，仍需回到原始司法與官方資料確認每一條關係。</p></div>
         </section>
-        
-  </main>
-  <footer>
-    Published package: v04_debt_fraud_national_security. 圖題置於圖下方，資料來源與說明置於圖下方；表題與矩陣圖依研究包文字另行引用。
-  </footer>
+        </main>
+  <footer>Published package: v05_scispace_style_figures. 圖說採綜合論述格式；顏色表示關係或節點類型，不表示刑責高低。</footer>
 </body>
 </html>
