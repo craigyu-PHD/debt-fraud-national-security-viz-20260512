@@ -1,18 +1,10 @@
-# debt-fraud-national-security-viz-20260512
+# Debt Fraud National Security Viz v07
 
-GitHub Pages publication package for v06 figures of:
+GitHub Pages package for the v07 CiteSpace-style figure set.
 
-`債務陷阱、詐欺金融與國家安全：國軍遭滲透之自我中心網絡分析與跨域犯罪溯源`
+- Public site: https://craigyu-phd.github.io/debt-fraud-national-security-viz-20260512/
+- Figures: `fig01_*_v07.png` through `fig12_*_v07.png`
+- Captions: `figure_captions_v07.md`
+- Source script: `../06-scripts/build_v07_citespace_exact_style.py` in the research workspace
 
-This version rebuilds the eight formal figures with a CiteSpace-style motif-mining visual grammar:
-
-- crime-finance co-binding mechanism
-- evidence gatekeeping
-- anchor-based snowball sampling
-- multimode coding schema
-- infiltration typology matrix
-- recruitment, payment, debt, communication, and data-transfer tri-flow network
-- brokerage centrality
-- event-sequence timeline
-
-All empirical figures are generated from scripted E3/E2 coded data. No image-generation model is used for formal figures.
+The empirical figures are generated from coded E3/E2 sources. Image-generation models were not used for real nodes or real edges.
