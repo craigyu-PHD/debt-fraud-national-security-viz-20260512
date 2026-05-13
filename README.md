@@ -1,11 +1,18 @@
-# v05 SciSpace-Style Research Figures
+# debt-fraud-national-security-viz-20260512
 
-Published website for:
+GitHub Pages publication package for v06 figures of:
 
 `債務陷阱、詐欺金融與國家安全：國軍遭滲透之自我中心網絡分析與跨域犯罪溯源`
 
-This public package contains only the website, eight SciSpace-inspired color figure images, and figure captions.
+This version rebuilds the eight formal figures with a CiteSpace-style motif-mining visual grammar:
 
-Raw sources, cleaned texts, coding tables, edge tables, and internal review records are intentionally excluded from this public GitHub Pages package.
+- crime-finance co-binding mechanism
+- evidence gatekeeping
+- anchor-based snowball sampling
+- multimode coding schema
+- infiltration typology matrix
+- recruitment, payment, debt, communication, and data-transfer tri-flow network
+- brokerage centrality
+- event-sequence timeline
 
-All figures were generated from code. No image generation model was used.
+All empirical figures are generated from scripted E3/E2 coded data. No image-generation model is used for formal figures.
