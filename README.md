@@ -1,10 +1,7 @@
-# Debt Fraud National Security Viz v08
+# Debt Fraud National Security Viz v09
 
-GitHub Pages package for the v08 CiteSpace-style figure set.
+GitHub Pages package for the v09 academic network figure set.
 
-- Public site: https://craigyu-phd.github.io/debt-fraud-national-security-viz-20260512/
-- Figures: `fig01_*_v08.png` through `fig12_*_v08.png`
-- Captions: `figure_captions_v08.md`
-- Visual semantic audit: `visual_semantic_audit_v08.csv`
+This version publishes 12 adjustable SVG-based figures, matching PNG exports, figure legends, and the visual semantic audit. The public page uses pan and zoom controls so each figure can be inspected or screenshot at different scales.
 
-PNG files contain only the visualized figure body. Figure titles, sources, and explanatory captions are kept outside the image files for article layout.
+Formal empirical figures are generated from the coded E3/E2 tables and scripts. Image generation models were not used for real nodes, real edges, case labels, amounts, or empirical relationships.
